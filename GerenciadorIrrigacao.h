@@ -4,14 +4,15 @@
 #include "SensorUmidade.h"
 #include "AtuadorLED.h"
 
+// Classe que gerencia o sistema de irrigação automática
 class GerenciadorIrrigacao {
-  SensorUmidade& sensor;
-  AtuadorLED& led;
-  int limiar;
+  SensorUmidade& sensor;  // Referência ao sensor de umidade
+  AtuadorLED& led;        // Referência ao LED atuador
+  int limiar;             // Limiar de umidade para acionar o LED
 
 public:
-  GerenciadorIrrigacao(SensorUmidade& s, AtuadorLED& l, int lmiar);
-  void atualizar();
+  GerenciadorIrrigacao(SensorUmidade& s, AtuadorLED& l, int lmiar); // Construtor
+  void atualizar();      // Atualiza o estado da irrigação (liga/desliga o LED)
 };
 
 #endif
