@@ -62,3 +62,4 @@ Este projeto monitora continuamente a umidade do solo usando um sensor HL-69 aco
 - Broker MQTT acessível
 - Arduino IDE para upload do firmware
 
+![Montagem do circuito](irrigacao_esp32_bb.jpg)
